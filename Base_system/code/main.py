@@ -761,12 +761,12 @@ class App(tk.Tk):
         """ 
         
         # Actual Gripper 
-        if self.protocol_z.gripper_actual_reed1 == "1":  
+        if self.protocol_z.gripper_actual_lead1 == "1":  
             self.status_reed_switch_1.change_text("ON", color=Color.blue)
         else:
             self.status_reed_switch_1.change_text("OFF", color=Color.gray)
 
-        if self.protocol_z.gripper_actual_reed2 == "1":
+        if self.protocol_z.gripper_actual_lead2 == "1":
             self.status_reed_switch_2.change_text("ON", color=Color.blue)
         else:
             self.status_reed_switch_2.change_text("OFF", color=Color.gray)
