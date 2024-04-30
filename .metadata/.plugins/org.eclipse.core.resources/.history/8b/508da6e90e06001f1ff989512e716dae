@@ -1,0 +1,14 @@
+/*
+ * globalVar.h
+ *
+ *  Created on: Apr 29, 2024
+ *      Author: Phatt
+ */
+
+#ifndef INC_GLOBALVAR_H_
+#define INC_GLOBALVAR_H_
+
+extern registerFrame[200];
+
+
+#endif /* INC_GLOBALVAR_H_ */

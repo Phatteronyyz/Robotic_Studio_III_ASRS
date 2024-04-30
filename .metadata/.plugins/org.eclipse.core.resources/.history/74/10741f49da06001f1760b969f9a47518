@@ -1,0 +1,16 @@
+///*
+// * call_data.c
+// *
+// *  Created on: Apr 29, 2024
+// *      Author: Phatt
+// */
+//#include "globalVar.h"
+//
+//void sendall(){
+//	registerFrame[0x04] = gripperMovementActualStatus;
+//	registerFrame[0x10] = zMovementStatus;
+//	registerFrame[0x11] = zPosition;
+//	registerFrame[0x12] = zSpeed;
+//	registerFrame[0x13] = zAccel;
+//	registerFrame[0x40] = xPosition;
+//}

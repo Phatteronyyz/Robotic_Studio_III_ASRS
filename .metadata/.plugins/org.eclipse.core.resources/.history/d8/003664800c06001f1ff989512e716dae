@@ -1,0 +1,6 @@
+#ifndef CALL_MODE_H
+#define CALL_MODE_H
+
+void do_mode();
+
+#endif

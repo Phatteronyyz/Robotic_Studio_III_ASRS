@@ -1,0 +1,18 @@
+/*
+ * globalVar.h
+ *
+ *  Created on: Apr 29, 2024
+ *      Author: Phatt
+ */
+#include "ModBusRTU.h"
+
+#ifndef INC_GLOBALVAR_H_
+#define INC_GLOBALVAR_H_
+
+extern u16u8_t registerFrame[200];
+extern uint16_t Gripper_movement_status;
+extern uint16_t Gripper_movement_actual_status;
+
+
+
+#endif /* INC_GLOBALVAR_H_ */
