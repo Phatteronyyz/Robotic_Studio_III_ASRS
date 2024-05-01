@@ -40,6 +40,7 @@ void do_home(){
 void run_point_mode(){
 	registerFrame[0x01].U16 = 0;
 	registerFrame[0x10].U16 = 16;
+	registerFrame[0x30].U16 = 300;
 	HAL_Delay(500);
 	zPosition = 300;
 //	going to point

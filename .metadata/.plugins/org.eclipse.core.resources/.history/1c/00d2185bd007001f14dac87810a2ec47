@@ -1,0 +1,11 @@
+/*
+ * motor_control.c
+ *
+ *  Created on: Apr 29, 2024
+ *      Author: Phatt
+ */
+
+void motot_cal(){
+	QEIOfRound = QEIReadRaw % 8192;
+	degreePerRound = (QEIOfRound * 360.0) / 8192;
+}

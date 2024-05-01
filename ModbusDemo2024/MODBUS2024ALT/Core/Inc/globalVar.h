@@ -14,6 +14,15 @@ extern uint8_t gripperMovementStatus, gripperMovementActualStatus;
 extern uint8_t zMovementStatus;
 extern double zPosition, zSpeed, zAccel, zPoint, xPosition;
 extern char pickOrder[6], placeOrder[6];
-extern double firstShelve, secondShelve, thirdShelve, fourthShelve, fifthShelve;
+extern double firstShelve, secondShelve, thirdShelve, fourthShelve, fifthShelve;\
+
+extern uint32_t QEIReadRaw, QEIOfRound;
+extern double degreePerRound, linearPos;
+
+extern double setposition, err;
+extern double Vfeedback;
+extern uint64_t usePWM;
+
+
 
 #endif /* INC_GLOBALVAR_H_ */
