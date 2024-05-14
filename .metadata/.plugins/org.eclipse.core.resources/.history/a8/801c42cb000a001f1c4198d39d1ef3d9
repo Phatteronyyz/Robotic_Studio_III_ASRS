@@ -1,0 +1,13 @@
+#include "math.h"
+#include "globalVar.h"
+
+void init_tim_remote(){
+	HAL_TIM_Base_Start(&htim1);
+	HAL_TIM_IC_Start(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_IC_Start(&htim1, TIM_CHANNEL_2);
+}
+
+
+void remote_recieve(){
+	ch1_zPosition = __HAL_TIM_GET_COMPARE(&htim1,TIM_CHANNEL_2);
+}

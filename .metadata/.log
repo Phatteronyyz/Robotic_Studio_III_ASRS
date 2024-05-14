@@ -720,3 +720,772 @@ java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-05-02 12:08:18.229 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-02 12:08:28.572
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-02 12:08:28.575
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-02 12:08:37.497
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-02 12:36:24.112
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-02 12:36:24.112
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-05-03 17:35:56.845 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-03 17:36:18.125
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-03 17:36:18.132
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-03 17:36:28.368
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-03 18:41:00.684
+!MESSAGE Indexed 'testestset' (23 sources, 83 headers) in 4.23 sec: 5,650 declarations; 28,925 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0058%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-05-03 18:43:42.753
+!MESSAGE ST-LINK GDB server failed to start (exit code = 0)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-05-03 18:43:42.782
+!MESSAGE Error in final launch sequence:
+
+Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to start GDB server
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1815)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2024-05-03 18:43:42.783
+!MESSAGE Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1815)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 2 com.st.stm32cube.ide.mcu.toolchain 4 0 2024-05-03 18:43:42.783
+!MESSAGE Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+!SESSION 2024-05-04 15:29:15.500 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-04 15:30:02.300
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-04 15:30:02.308
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-04 15:30:12.840
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 16:35:32.292
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 16:35:32.292
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 16:36:11.528
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 16:36:11.528
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 16:37:06.309
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 16:37:06.309
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 17:25:28.464
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 17:25:28.464
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 17:26:54.667
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 17:26:54.667
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 17:33:18.676
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 17:33:18.676
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 18:41:13.524
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 18:41:13.524
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 18:57:11.231
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 18:57:11.231
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 20:12:51.413
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 20:12:51.414
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 20:35:55.055
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-04 20:35:55.055
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-05-06 21:36:10.367 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-06 21:36:34.076
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-06 21:36:34.084
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-06 21:36:45.969
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-05-07 14:24:46.633 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-07 14:25:06.262
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-07 14:25:06.270
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-07 14:25:16.475
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 15:30:08.099
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 15:30:08.100
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 15:47:36.993
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 15:47:36.993
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 15:47:49.436
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 15:47:49.436
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 16:18:55.694
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 16:18:55.694
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 16:19:37.110
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-07 16:19:37.110
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-05-08 00:04:36.564 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-08 00:04:59.886
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-08 00:04:59.889
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-08 00:05:10.866
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-05-08 13:59:56.748 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-05-08 14:00:04.982
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-08 14:00:17.800
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-08 14:00:17.807
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-08 14:01:10.587
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-05-09 15:16:55.084 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-09 15:18:22.967
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-09 15:18:23.030
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-09 15:18:37.954
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-09 16:38:54.044
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-09 16:38:54.044
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-05-09 16:39:10.741
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-05-09 16:39:10.741
+!MESSAGE E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\Debug\MODBUS2024ALT.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-05-11 12:32:09.575 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-11 12:32:30.604
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-11 12:32:30.614
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-11 12:32:41.574
+!MESSAGE Started RMI Server, listening on port 41337

@@ -8,9 +8,10 @@
 #ifndef INC_CALL_MODE_H_
 #define INC_CALL_MODE_H_
 
-void watch_mdoe();
+void watch_mode();
 void do_home();
 void set_shelves();
 void run_point_mode();
+void call_all_mode();
 
 #endif /* INC_CALL_MODE_H_ */

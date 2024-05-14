@@ -1,0 +1,14 @@
+#include "main.h"
+#include "ModBusRTU.h"
+
+u16u8_t registerFrame[200];
+
+uint32_t QEIReadRaw = 0, QEIOfRound = 0;
+double degreePerRound = 0.0, linearPos = 0.0;
+
+double setposition = 0.0, err = 0.0, errr = 0.0;
+double Vfeedback = 0.0, absVfb = 0.0;
+uint64_t usePWM = 0, fPWM = 0;
+
+int32_t ServoTime,ServoPeriod;
+uint16_t Rise, Fall;

@@ -1,0 +1,29 @@
+/*
+ * globalVar.h
+ *
+ *  Created on: Apr 29, 2024
+ *      Author: Phatt
+ */
+#include "ModBusRTU.h"
+
+#ifndef INC_GLOBALVAR_H_
+#define INC_GLOBALVAR_H_
+
+extern u16u8_t registerFrame[200];
+extern uint8_t baseSystemStatus, vacuumStatus, movementStatus, movementActualStatus;
+extern uint32_t zMovingStatus, zActualPosition, zActualSpeed, zAccel;
+extern uint16_t pickOrder, placeOrder;
+extern uint32_t firstShelvesPosition, secondShelvesPosition, thirdsecondShelvesPosition, fourthsecondShelvesPosition, fifthsecondShelvesPosition;
+
+extern uint32_t QEIReadRaw, QEIOfRound;
+extern double degreePerRound, linearPos;
+
+extern double setposition, err, errr;
+extern double Vfeedback, absVfb;
+extern uint64_t usePWM, fPWM;
+
+// remote
+extern int32_t ch1_zPosition, ch1_dt;
+
+
+#endif /* INC_GLOBALVAR_H_ */

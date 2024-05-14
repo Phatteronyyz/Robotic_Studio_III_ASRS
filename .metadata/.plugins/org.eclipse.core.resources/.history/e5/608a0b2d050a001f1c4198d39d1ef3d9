@@ -1,0 +1,26 @@
+#include "main.h"
+#include "ModBusRTU.h"
+
+u16u8_t registerFrame[200];
+
+uint8_t baseSystemStatus, vacuumStatus, movementStatus, movementActualStatus;
+uint32_t zMovingStatus, zActualPosition, zActualSpeed, zAccel;
+uint16_t pickOrder, placeOrder;
+uint32_t firstShelvesPosition, secondShelvesPosition, thirdsecondShelvesPosition, fourthsecondShelvesPosition, fifthsecondShelvesPosition;
+uint32_t goalPointZ, xAxisPosition = 0;
+
+uint32_t QEIReadRaw = 0, QEIOfRound = 0;
+double degreePerRound = 0.0, linearPos = 0.0;
+
+double setposition = 0.0, err = 0.0, errr = 0.0;
+double Vfeedback = 0.0, absVfb = 0.0;
+uint64_t usePWM = 0, fPWM = 0;
+
+int32_t ServoTime, dt, ServoPeriod;
+uint16_t Rise, Fall;
+
+uint32_t ch1_timestamp = 0, ch2_timestamp = 0;
+int32_t ch1_zPosition, ch1_dt;
+uint16_t ch1_Rise, ch1_Fall;
+int32_t ch2_xPosition, ch2_dt;
+uint16_t ch2_Rise, ch2_Fall;

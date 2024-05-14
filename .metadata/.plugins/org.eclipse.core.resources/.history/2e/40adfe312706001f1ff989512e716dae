@@ -1,9 +1,0 @@
-#include "main.h"
-#include "ModBusRTU.h"
-
-u16u8_t registerFrame[200];
-uint8_t gripperMovementStatus, gripperMovementActualStatus;
-uint8_t zMovementStatus;
-double zPosition, zSpeed, zAccel, zPoint, xPosition;
-char pickOrder[6], placeOrder[6];
-double firstShelve, secondShelve, thirdShelve, fourthShelve, fifthShelve;

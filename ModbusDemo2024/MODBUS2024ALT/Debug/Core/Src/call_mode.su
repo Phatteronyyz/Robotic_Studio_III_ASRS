@@ -1,3 +1,4 @@
-../Core/Src/call_mode.c:5:6:watch_mode	8	static
-../Core/Src/call_mode.c:20:6:do_home	4	static
-../Core/Src/call_mode.c:40:6:run_point_mode	8	static
+../Core/Src/call_mode.c:5:6:call_all_mode	8	static
+../Core/Src/call_mode.c:9:6:watch_mode	8	static
+../Core/Src/call_mode.c:27:6:do_home	16	static
+../Core/Src/call_mode.c:57:6:run_point_mode	8	static

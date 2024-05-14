@@ -1,6 +1,0 @@
-#ifndef CALL_MODE_H
-#define CALL_MODE_H
-
-int add(int a, int b);
-
-#endif

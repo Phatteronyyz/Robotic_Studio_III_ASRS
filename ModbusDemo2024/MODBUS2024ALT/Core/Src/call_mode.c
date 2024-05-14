@@ -2,18 +2,25 @@
 #include <math.h>
 #include "globalVar.h"
 
+void call_all_mode(){
+	do_home();
+}
+
 void watch_mode(){
 	if(registerFrame[0x01].U16 == 1){
 
 	}
 	else if(registerFrame[0x01].U16 == 2){
-		do_home();
+		modeSelection = 1;
 	}
 	else if(registerFrame[0x01].U16 == 4){
 
 	}
 	else if(registerFrame[0x01].U16 == 8){
-		run_point_mode();
+//		run_point_mode();
+	}
+	if(modeSelection == 1){
+		do_home();
 	}
 }
 
@@ -21,11 +28,21 @@ void do_home(){
 	//set base status to 0 (default)
 	registerFrame[0x01].U16 = 0;
 	//set moving status to home
-	registerFrame[0x10].U16 = 2;
+	zMovingStatus = 2;
 	//Homing
-	if(registerFrame[0x11].U16 == 0){
+	if(ADC_RawRead[0] < 4090){
 		//when finished turn moving status to 0
-		registerFrame[0x10].U16 = 0;
+		motorDirection = -1;
+		thispwm = 14000;
+		motor_run(thispwm, 2);
+	}
+	else if(ADC_RawRead[0] > 4090){
+		thispwm = 0;
+		zMovingStatus = 0;
+		modeSelection = 0;
+		QEIReadRaw = 0;
+		home_trigger = 1;
+		home_timeStamp = HAL_GetTick() + 500;
 	}
 }
 
@@ -42,7 +59,6 @@ void run_point_mode(){
 	registerFrame[0x10].U16 = 16;
 	registerFrame[0x30].U16 = 300;
 	HAL_Delay(500);
-	zPosition = 300;
 //	going to point
 	registerFrame[0x10].U16 = 0;
 }

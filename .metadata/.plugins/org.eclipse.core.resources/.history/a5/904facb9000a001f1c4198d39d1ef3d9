@@ -1,0 +1,6 @@
+#include "math.h"
+#include "globalVar.h"
+
+void remote_recieve(){
+	ch1_zPosition = __HAL_TIM_GET_COMPARE(&htim1,TIM_CHANNEL_2);
+}
