@@ -1,0 +1,18 @@
+!SESSION 2024-05-17 03:15:51.517 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-17 03:16:13.077
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-17 03:16:13.088
+!MESSAGE Log4j2 initialized with config file E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-17 03:16:18.067
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-17 03:16:52.978
+!MESSAGE Indexed 'MODBUS2024ALT' (59 sources, 812 headers) in 8.29 sec: 32,203 declarations; 276,582 references; 5 unresolved inclusions; 163 syntax errors; 415 unresolved names (0.13%)
