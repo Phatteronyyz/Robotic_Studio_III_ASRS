@@ -1,4 +1,11 @@
-../Core/Src/call_mode.c:5:6:call_all_mode	1
-../Core/Src/call_mode.c:9:6:watch_mode	4
-../Core/Src/call_mode.c:27:6:do_home	3
-../Core/Src/call_mode.c:57:6:run_point_mode	1
+../Core/Src/call_mode.c:10:6:watch_mode	11
+../Core/Src/call_mode.c:43:6:do_home	3
+../Core/Src/call_mode.c:60:6:set_shelves	9
+../Core/Src/call_mode.c:97:6:run_point_mode	5
+../Core/Src/call_mode.c:112:6:run_jog_mode	21
+../Core/Src/call_mode.c:206:6:p1On	1
+../Core/Src/call_mode.c:210:6:p2On	1
+../Core/Src/call_mode.c:214:6:p1Off	1
+../Core/Src/call_mode.c:218:6:p2Off	1
+../Core/Src/call_mode.c:222:6:p1Blink	2
+../Core/Src/call_mode.c:232:6:p2Blink	2

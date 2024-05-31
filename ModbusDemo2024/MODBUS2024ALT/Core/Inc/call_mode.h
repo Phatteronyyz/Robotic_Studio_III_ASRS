@@ -13,5 +13,12 @@ void do_home();
 void set_shelves();
 void run_point_mode();
 void call_all_mode();
+void z_axis_control_by_remote();
+void p1On();
+void p2On();
+void p1Off();
+void p2Off();
+void p1Blink();
+void p2Blink();
 
 #endif /* INC_CALL_MODE_H_ */

@@ -1,6 +1,0 @@
-#include "math.h"
-#include "globalVar.h"
-
-void remote_recieve(){
-
-}

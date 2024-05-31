@@ -1,0 +1,17 @@
+11:52:12 **** Incremental Build of configuration Debug for project TESTIII ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TESTIII.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Fibo_2_2\FRA222_microcon\TEST3\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TESTIII.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TESTIII.elf
+ 
+arm-none-eabi-size  TESTIII.elf 
+arm-none-eabi-objdump -h -S TESTIII.elf  > "TESTIII.list"
+   text	   data	    bss	    dec	    hex	filename
+  14676	     12	   1828	  16516	   4084	TESTIII.elf
+Finished building: default.size.stdout
+ 
+Finished building: TESTIII.list
+ 
+
+11:52:13 Build Finished. 0 errors, 0 warnings. (took 927ms)
+

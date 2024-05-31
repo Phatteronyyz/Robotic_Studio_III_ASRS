@@ -1,0 +1,19 @@
+/*
+ * pidControl.h
+ *
+ *  Created on: May 31, 2024
+ *      Author: Phatt
+ */
+
+#ifndef INC_PIDCONTROL_H_
+#define INC_PIDCONTROL_H_
+
+void PID_Tuning();
+void sensor();
+void reset_pos();
+void HomemadePID();
+void Trajectory();
+void changeUnit();`
+void speedread();
+
+#endif /* INC_PIDCONTROL_H_ */

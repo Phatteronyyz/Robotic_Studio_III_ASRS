@@ -15,7 +15,7 @@ void sendall(){
 	// Movement Status
 //	registerFrame[0x03].U16 = 0;
 	// Movement Actual Status
-//	registerFrame[0x04].U16 = 0;
+	registerFrame[0x04].U16 = movementActualStatus;
 	// z-axis Moving Status
 	registerFrame[0x10].U16 = zMovingStatus;
 	// z-axis Actual Position
@@ -29,7 +29,7 @@ void sendall(){
 	// Place order
 //	registerFrame[0x22].U16 = 0;
 	// 1st shelves position
-//	registerFrame[0x23].U16 = 0;
+//	registerFrame[0x23].U16 = firstShelvesPosition;
 	// 2nd shelves position
 //	registerFrame[0x24].U16 = 0;
 	// 3rd shelves position

@@ -15,7 +15,7 @@ void motor_basic_cal();
 void is_motor_should_run();
 void PWM_control();
 void x_axis_control_by_remote();
-void z_axis_control_by_remote();
+void motorQueue();
 
 
 #endif /* INC_MOTOR_CONTROL_H_ */

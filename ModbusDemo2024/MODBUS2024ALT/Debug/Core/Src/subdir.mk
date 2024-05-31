@@ -9,6 +9,7 @@ C_SRCS += \
 ../Core/Src/call_data.c \
 ../Core/Src/call_mode.c \
 ../Core/Src/globalVar.c \
+../Core/Src/gripper.c \
 ../Core/Src/main.c \
 ../Core/Src/motor_control.c \
 ../Core/Src/stm32g4xx_hal_msp.c \
@@ -22,6 +23,7 @@ OBJS += \
 ./Core/Src/call_data.o \
 ./Core/Src/call_mode.o \
 ./Core/Src/globalVar.o \
+./Core/Src/gripper.o \
 ./Core/Src/main.o \
 ./Core/Src/motor_control.o \
 ./Core/Src/stm32g4xx_hal_msp.o \
@@ -35,6 +37,7 @@ C_DEPS += \
 ./Core/Src/call_data.d \
 ./Core/Src/call_mode.d \
 ./Core/Src/globalVar.d \
+./Core/Src/gripper.d \
 ./Core/Src/main.d \
 ./Core/Src/motor_control.d \
 ./Core/Src/stm32g4xx_hal_msp.d \
@@ -51,7 +54,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/ModBusRTU.cyclo ./Core/Src/ModBusRTU.d ./Core/Src/ModBusRTU.o ./Core/Src/ModBusRTU.su ./Core/Src/call_data.cyclo ./Core/Src/call_data.d ./Core/Src/call_data.o ./Core/Src/call_data.su ./Core/Src/call_mode.cyclo ./Core/Src/call_mode.d ./Core/Src/call_mode.o ./Core/Src/call_mode.su ./Core/Src/globalVar.cyclo ./Core/Src/globalVar.d ./Core/Src/globalVar.o ./Core/Src/globalVar.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/motor_control.cyclo ./Core/Src/motor_control.d ./Core/Src/motor_control.o ./Core/Src/motor_control.su ./Core/Src/stm32g4xx_hal_msp.cyclo ./Core/Src/stm32g4xx_hal_msp.d ./Core/Src/stm32g4xx_hal_msp.o ./Core/Src/stm32g4xx_hal_msp.su ./Core/Src/stm32g4xx_it.cyclo ./Core/Src/stm32g4xx_it.d ./Core/Src/stm32g4xx_it.o ./Core/Src/stm32g4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32g4xx.cyclo ./Core/Src/system_stm32g4xx.d ./Core/Src/system_stm32g4xx.o ./Core/Src/system_stm32g4xx.su
+	-$(RM) ./Core/Src/ModBusRTU.cyclo ./Core/Src/ModBusRTU.d ./Core/Src/ModBusRTU.o ./Core/Src/ModBusRTU.su ./Core/Src/call_data.cyclo ./Core/Src/call_data.d ./Core/Src/call_data.o ./Core/Src/call_data.su ./Core/Src/call_mode.cyclo ./Core/Src/call_mode.d ./Core/Src/call_mode.o ./Core/Src/call_mode.su ./Core/Src/globalVar.cyclo ./Core/Src/globalVar.d ./Core/Src/globalVar.o ./Core/Src/globalVar.su ./Core/Src/gripper.cyclo ./Core/Src/gripper.d ./Core/Src/gripper.o ./Core/Src/gripper.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/motor_control.cyclo ./Core/Src/motor_control.d ./Core/Src/motor_control.o ./Core/Src/motor_control.su ./Core/Src/stm32g4xx_hal_msp.cyclo ./Core/Src/stm32g4xx_hal_msp.d ./Core/Src/stm32g4xx_hal_msp.o ./Core/Src/stm32g4xx_hal_msp.su ./Core/Src/stm32g4xx_it.cyclo ./Core/Src/stm32g4xx_it.d ./Core/Src/stm32g4xx_it.o ./Core/Src/stm32g4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32g4xx.cyclo ./Core/Src/system_stm32g4xx.d ./Core/Src/system_stm32g4xx.o ./Core/Src/system_stm32g4xx.su
 
 .PHONY: clean-Core-2f-Src
 

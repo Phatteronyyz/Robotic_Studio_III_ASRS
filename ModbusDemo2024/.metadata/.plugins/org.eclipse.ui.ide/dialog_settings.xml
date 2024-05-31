@@ -9,6 +9,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\Fibo_2_2\FRA233_Control\Kalman_CubeIDE"/>
 			<item value="E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT"/>
 		</list>
 	</section>

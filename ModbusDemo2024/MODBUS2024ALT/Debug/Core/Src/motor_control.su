@@ -1,8 +1,2 @@
-../Core/Src/motor_control.c:11:6:init_motor_cal	8	static
-../Core/Src/motor_control.c:15:6:motor_moveup	8	static
-../Core/Src/motor_control.c:20:6:motor_movedown	8	static
-../Core/Src/motor_control.c:25:6:motor_basic_cal	8	static
-../Core/Src/motor_control.c:34:6:is_motor_should_run	4	static
-../Core/Src/motor_control.c:53:6:PWM_control	24	static
-../Core/Src/motor_control.c:78:6:x_axis_control_by_remote	8	static
-../Core/Src/motor_control.c:91:6:z_axis_control_by_remote	8	static
+../Core/Src/motor_control.c:34:6:is_motor_should_run	8	static
+../Core/Src/motor_control.c:94:6:readLimit	8	static

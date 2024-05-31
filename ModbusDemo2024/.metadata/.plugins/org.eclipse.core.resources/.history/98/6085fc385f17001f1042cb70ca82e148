@@ -1,0 +1,15 @@
+/*
+ * gripper.c
+ *
+ *  Created on: May 21, 2024
+ *      Author: Phatt
+ */
+#include <stdio.h>
+#include <math.h>
+#include "globalVar.h"
+
+void readLead(){
+	leadMin = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_7);
+	leadMin = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6);
+}
+

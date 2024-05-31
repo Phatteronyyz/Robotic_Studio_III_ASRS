@@ -1,17 +1,10 @@
-17:11:36 **** Incremental Build of configuration Debug for project MODBUS2024ALT ****
+00:18:05 **** Incremental Build of configuration Debug for project MODBUS2024ALT ****
 make -j12 all 
-arm-none-eabi-gcc -o "MODBUS2024ALT.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Fibo_2_2\Stu\All_code\Robotic_Studio_III_ASRS\ModbusDemo2024\MODBUS2024ALT\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MODBUS2024ALT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: MODBUS2024ALT.elf has a LOAD segment with RWX permissions
-Finished building target: MODBUS2024ALT.elf
- 
 arm-none-eabi-size  MODBUS2024ALT.elf 
-arm-none-eabi-objdump -h -S MODBUS2024ALT.elf  > "MODBUS2024ALT.list"
    text	   data	    bss	    dec	    hex	filename
-  45392	    532	   5424	  51348	   c894	MODBUS2024ALT.elf
+  48600	    656	   6040	  55296	   d800	MODBUS2024ALT.elf
 Finished building: default.size.stdout
  
-Finished building: MODBUS2024ALT.list
- 
 
-17:11:39 Build Finished. 0 errors, 1 warnings. (took 2s.151ms)
+00:18:06 Build Finished. 0 errors, 0 warnings. (took 953ms)
 
