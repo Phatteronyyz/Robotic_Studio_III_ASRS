@@ -32,7 +32,7 @@ extern int motoring, remoteCheck;
 extern double setposition, err, errr;
 extern double absVfb;
 extern uint64_t usePWM, fPWM, thispwm;
-extern int8_t motorDirection, isMotorCanMoveUp, isMotorCanMoveDown, home_trig, home_select;
+extern int8_t motorDirection, isMotorCanMoveUp, isMotorCanMoveDown, home_trig, home_select, jogMode_subState;
 extern uint64_t tickk, home_timeStamp, home_trigger, pointMode_trig, pointMode_timeStamp, pointMode_timeTrig, run_jog_trig, run_jog_timestamp, run_jog_stage;
 extern uint64_t goPoint_trig, jogModeGoal, gopoint_act, goPointgoal, goPoint_times, jog_goPoint_actt, point_traj_trig, jogMode_trig, jogModeState, jogMode_timeStamp;
 
@@ -66,7 +66,7 @@ extern uint8_t leadMin, leadMax, pushpull, vacc;
 
 extern float trajec_target;
 
-extern uint64_t modBusTimeStamp, p1_timeStamp, p2_timeStamp;
+extern uint64_t modBusTimeStamp, p1_timeStamp, p2_timeStamp, p1_trig, p2_trig;
 
 extern uint8_t finish_state;
 

@@ -19,11 +19,11 @@ void sendall(){
 	// z-axis Moving Status
 	registerFrame[0x10].U16 = zMovingStatus;
 	// z-axis Actual Position
-	registerFrame[0x11].U16 = floor((linearPos * 1000000))/100000;
+	registerFrame[0x11].U16 = (floor((linearPos * 1000000))/100000) + 800;
 	// z-axis Actual Speed
-	registerFrame[0x12].U16 = 0;
+	registerFrame[0x12].U16 = (floor((zActualSpeed * 1000000))/100000);
 	// z-axis Actual Acceleration
-	registerFrame[0x13].U16 = 0;
+	registerFrame[0x13].U16 = (floor((zAccel * 1000000))/100000);
 	// Pick order
 //	registerFrame[0x21].U16 = 0;
 	// Place order

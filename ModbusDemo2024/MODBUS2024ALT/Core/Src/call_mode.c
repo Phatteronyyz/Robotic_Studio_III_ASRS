@@ -17,8 +17,9 @@ void watch_mode(){
 		else if(limitMin) home_select = 2;
 	}
 	else if(registerFrame[0x01].U16 == 4){
-		modeSelection = 3;
+		currentOrder = 0;
 		jogModeState = goPick;
+		modeSelection = 3;
 		jogMode_timeStamp = tickk + 2000;
 	}
 	else if(registerFrame[0x01].U16 == 8){
@@ -28,12 +29,16 @@ void watch_mode(){
 
 	if(modeSelection == 1){
 		do_home();
+		p1Blink();
+		p2Blink();
 	}
 	else if(modeSelection == 2){
 		run_point_mode();
 	}
 	else if(modeSelection == 3){
 		run_jog_mode();
+		p1On();
+		p2On();
 	}
 	else if(modeSelection == 4){
 		set_shelves();
@@ -131,7 +136,7 @@ void run_jog_mode(){
 	if(jogModeState == goPick){
 		registerFrame[0x10].U16 = 4;
 		if(jogMode_trig == 0){
-			trajec_target = posOrder[pickOrder[currentOrder] - 1] - 5;
+			trajec_target = posOrder[pickOrder[currentOrder] - 1] - 3;
 			jogMode_trig = 1;
 		}
 		if(finish_state == 1 && jogMode_timeStamp < tickk){
@@ -141,12 +146,33 @@ void run_jog_mode(){
 		}
 	}
 	else if(jogModeState == Grap){
-		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
+//		if(jogMode_subState == 0 && jogMode_timeStamp < tickk){
+//			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 0);
+//			jogMode_subState = 1;
+//		}
+//		else if(jogMode_subState == 1 && !leadMax){
+//			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
+//			jogMode_timeStamp = tickk + 200;
+//			jogMode_subState = 2;
+//		}
+//		else if(jogMode_subState == 2 && jogMode_timeStamp < tickk){
+//			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 1);
+//			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
+//			jogMode_subState = 3;
+//			jogMode_timeStamp = tickk + 200;
+//		}
+//		else if(jogMode_subState == 3 && !leadMin){
+//			jogMode_subState = 4;
+//			jogMode_timeStamp = tickk + 200;
+//		}
+
 		if(jogMode_timeStamp - 1000 < tickk){
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 0);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
 		}
-		if(jogMode_timeStamp - 200 < tickk){
+		if(jogMode_timeStamp - 350 < tickk){
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 1);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
 		}
 		if(jogMode_timeStamp < tickk){
 			jogModeState = goPlace;
@@ -173,15 +199,15 @@ void run_jog_mode(){
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 0);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
 		}
-		else if(jogMode_timeStamp - 800 < tickk){
+		else if(jogMode_timeStamp - 900 < tickk){
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 1);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 0);
 		}
-		else if(jogMode_timeStamp - 550 < tickk){
+		else if(jogMode_timeStamp - 700 < tickk){
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, 1);
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 1);
 		}
-		else if(jogMode_timeStamp - 200 < tickk){
+		else if(jogMode_timeStamp - 500 < tickk){
 			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 0);
 		}
 		else if(jogMode_timeStamp > tickk){
@@ -203,39 +229,37 @@ void run_jog_mode(){
 
 }
 
-void p1On(){
+void p2On(){
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
 }
 
-void p2On(){
+void p1On(){
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
 }
 
-void p1Off(){
+void p2Off(){
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 1);
 }
 
-void p2Off(){
+void p1Off(){
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
 }
 
-void p1Blink(){
-	if(p1_timeStamp < HAL_GetTick()){
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
-		p1_timeStamp += 500;
-	}
-	else{
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 1);
+void p2Blink(){
+	if(p2_timeStamp <= tickk){
+		p2_trig = (p2_trig + 1) %2;
+		if(p2_trig) p2On();
+		else if(!p2_trig) p2Off();
+		p2_timeStamp = tickk + 500;
 	}
 }
 
-void p2Blink(){
-	if(p1_timeStamp < HAL_GetTick()){
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
-		p1_timeStamp += 500;
-	}
-	else{
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
+void p1Blink(){
+	if(p1_timeStamp <= tickk){
+		p1_trig = (p1_trig + 1) %2;
+		if(p1_trig) p1On();
+		else if(!p1_trig) p1Off();
+		p1_timeStamp = tickk + 500;
 	}
 }
 //

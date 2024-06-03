@@ -25,12 +25,12 @@ int motoring = 0, remoteCheck = 0;
 double setposition = 0.0, err = 0.0, errr = 0.0;
 double absVfb = 0.0;
 uint64_t usePWM = 0, fPWM = 0, thispwm = 0;
-int8_t motorDirection = 0, isMotorCanMoveUp = 0, isMotorCanMoveDown = 0, home_trig = 0, home_select = 0;
+int8_t motorDirection = 0, isMotorCanMoveUp = 0, isMotorCanMoveDown = 0, home_trig = 0, home_select = 0, jogMode_subState = 0;
 uint64_t tickk = 0, home_timeStamp = 0, home_trigger = 0, pointMode_trig = 0, pointMode_timeStamp = 0, pointMode_timeTrig = 0 , run_jog_trig  = 0, run_jog_timestamp = 0, run_jog_stage = 0;
 uint64_t goPoint_trig = 0 , jogModeGoal = 0, gopoint_act = 0, goPointgoal = 0, goPoint_times = 0, jog_goPoint_actt = 0, point_traj_trig = 0, jogMode_trig = 0, jogModeState = start, jogMode_timeStamp = 0;
 
-int32_t ServoTime, dt, ServoPeriod;
-uint16_t Rise, Fall;
+//int32_t ServoTime, dt, ServoPeriod;
+//uint16_t Rise, Fall;
 
 // remote
 uint64_t ch1_timestamp = 0, JoyxPosition_timestamp = 0, home_delay = 0;
@@ -61,6 +61,6 @@ uint8_t leadMin = 0, leadMax = 0, Emer = 0;
 
 float trajec_target;
 
-uint64_t modBusTimeStamp = 0, p1_timeStamp = 10, p2_timeStamp = 10;
+uint64_t modBusTimeStamp = 0, p1_timeStamp = 10, p2_timeStamp = 10, p1_trig = 0, p2_trig = 0;
 
 uint8_t finish_state = 0;

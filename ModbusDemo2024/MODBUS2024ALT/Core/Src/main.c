@@ -115,7 +115,17 @@ float Lasterror = 0;
 float speed = 0;
 float LastPos = 0;
 float Dis_down = 0;
+//float dt = 0;
+float dt_velo = 0;
+float dt_acc = 0;
 
+float tim_velo_new = 0;
+float tim_velo_last = 0;
+float tim_acc_new = 0;
+float tim_acc_last = 0;
+float velo_new = 0;
+float velo_last = 0;
+float acc = 0;
 
 
 /*--------------------------------------------------*/
@@ -141,6 +151,9 @@ float Timestamp = 0;
 float QEI_start = 0;
 uint8_t trajec_state = 0;
 
+float tim_new = 0;
+float tim_last = 0;
+
 uint8_t temp_check = 0;
 //uint32_t Position[2];
 //uint64_t TimeStamp[2];
@@ -163,6 +176,7 @@ static void MX_TIM3_Init(void);
 void remote_recieve();
 void motor_run(uint64_t pwm, uint8_t dir);
 int go_point();
+void speedread();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -292,9 +306,10 @@ int main(void)
 		  motor_run(0, 3);
 //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
 //		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
-
 		  registerFrame[0x10].U16 = 0;
 		  modeSelection = 0;
+		  jogModeState = goPick;
+		  currentOrder = 0;
 	  }
 	  else{
 		  readLead();
@@ -311,6 +326,9 @@ int main(void)
 		  		xAxisPosition = 0;
 		  		zMovingStatus = 0;
 		  		home_trig = 0;
+
+		  		p1Off();
+		  		p2Off();
 			  }
 		  }
 		  if(pointMode_timeTrig == 1){
@@ -326,8 +344,21 @@ int main(void)
 		  }
 		  Trajectory();
 		  HomemadePID();
+		  speedread();
+		  accelread();
+//		  if(p1_timeStamp < tickk){
+//		  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
+//		  		p1_timeStamp = tickk + 1000;
+//		  	}
+//		  	else if(p1_timeStamp > tickk){
+//		  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
+//		  	}
 
-		  LastPos = QEI_mm;
+
+
+		  zActualSpeed = speed;
+		  zAccel = acc;
+
 	  }
 //	  init_motor_cal();
 //	  remote_recieve();
@@ -1168,6 +1199,8 @@ void remote_recieve(){
 
 	if(modeSelection  == 0 || modeSelection == 4){
 		if(zUp < -2000 && zUp > -2010){
+			p1Blink();
+			p2Off();
 			remoteCheck = 1;
 			motor_run(9000, 1);
 			if(goPoint_times  < HAL_GetTick()){
@@ -1178,6 +1211,8 @@ void remote_recieve(){
 //			trajec_target = linearPos + 10;
 		}
 		else if(zDown > 38000 && zDown < 38800){
+			p2Blink();
+			p1Off();
 			remoteCheck = 2;
 			motor_run(7500, 2);
 		}
@@ -1187,12 +1222,12 @@ void remote_recieve(){
 		}
 
 		if(JoyxPosition < 38100){
-			if(JoyxPosition_timestamp < HAL_GetTick()){
+			if(JoyxPosition_timestamp < HAL_GetTick() && xAxisPosition < 100){
 				xAxisPosition += 1;
 				JoyxPosition_timestamp = HAL_GetTick() + 20;
 			}
 		}
-		else if(JoyxPosition > 39000){
+		else if(JoyxPosition > 39000 && xAxisPosition > -100){
 			if(JoyxPosition_timestamp < HAL_GetTick()){
 				xAxisPosition -= 1;
 				JoyxPosition_timestamp = HAL_GetTick() + 20;
@@ -1241,6 +1276,36 @@ int go_point(){
 			goPoint_trig = 2;
 			jog_goPoint_actt = 1;
 		}
+	}
+}
+
+void speedread(){
+	static uint32_t Timestamp = 0;
+	if (Timestamp < __HAL_TIM_GET_COUNTER(&htim2)) {
+		Timestamp = __HAL_TIM_GET_COUNTER(&htim2) + 10000;
+		QEI_raw = __HAL_TIM_GET_COUNTER(&htim1);
+		changeUnit();
+		tim_velo_new = __HAL_TIM_GET_COUNTER(&htim2);
+		dt_velo = (tim_velo_new - tim_velo_last)/1000000.0;
+		speed = (QEI_mm - LastPos)/dt_velo;
+
+		LastPos = QEI_mm;
+		tim_velo_last = tim_velo_new;
+	}
+}
+
+void accelread(){
+	static uint32_t TimesTamp = 0;
+	if (TimesTamp < __HAL_TIM_GET_COUNTER(&htim2)) {
+		TimesTamp = __HAL_TIM_GET_COUNTER(&htim2) + 40000;
+
+		tim_acc_new = __HAL_TIM_GET_COUNTER(&htim2);
+		velo_new = speed;
+		dt_acc = (tim_acc_new - tim_acc_last)/1000000.0;
+		acc = (velo_new - velo_last)/dt_acc;
+
+		velo_last = velo_new;
+		tim_acc_last = tim_acc_new;
 	}
 }
 
@@ -1331,13 +1396,6 @@ void HomemadePID(){
 		Lastime = Now;
 		Lasterror = error;
 	}
-}
-
-
-void speedread(){
-	Now = __HAL_TIM_GET_COUNTER(&htim2);
-	speed = ((QEI_mm - LastPos)*1000000.0)/(Now - Lastime);
-	Lastime = Now;
 }
 
 void Trajectory(){
