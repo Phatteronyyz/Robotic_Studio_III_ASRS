@@ -1,0 +1,2 @@
+../Core/Src/motor_control.c:34:6:is_motor_should_run	8	static
+../Core/Src/motor_control.c:94:6:readLimit	8	static
