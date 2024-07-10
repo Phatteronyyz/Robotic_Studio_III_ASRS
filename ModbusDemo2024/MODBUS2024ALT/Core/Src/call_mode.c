@@ -57,7 +57,6 @@ void do_home(){
 		home_timeStamp = HAL_GetTick() + 1000;
 		motor_run(0, 3);
 		home_trigger = 1;
-//		registerFrame[0x10].U16 = 0;
 		modeSelection = 0;
 	}
 }
